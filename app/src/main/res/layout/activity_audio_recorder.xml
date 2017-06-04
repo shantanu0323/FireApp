@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="shantanu.fireapp.AudioRecorder">
+
+
+    <TextView
+        android:id="@+id/tvRecordLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Tap and Hold to\nRecord"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <ImageButton
+        android:id="@+id/bRecord"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/record_button"
+        android:elevation="8dp"
+        android:src="@drawable/ic_record"
+        android:text="Button"/>
+
+
+</LinearLayout>

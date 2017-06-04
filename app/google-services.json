@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "37466869638",
+    "firebase_url": "https://fireapp-1dfa9.firebaseio.com",
+    "project_id": "fireapp-1dfa9",
+    "storage_bucket": "fireapp-1dfa9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37466869638:android:5465cba8e781373f",
+        "android_client_info": {
+          "package_name": "shantanu.fireapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37466869638-da3oeoenhrntsgv5qg06b5ni6bqlljdh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shantanu.fireapp",
+            "certificate_hash": "a0c8df6ecf2d8148273483f098711777188dca44"
+          }
+        },
+        {
+          "client_id": "37466869638-v1rkh494nd5klaab03kihhio210lgpd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsIfyasp_M9bZaj7s1Q5AlNCqF49IQwWA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37466869638-v1rkh494nd5klaab03kihhio210lgpd5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
