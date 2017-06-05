@@ -27,7 +27,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class GoogleSignIn extends AppCompatActivity {
 
     private SignInButton bGoogleSignIn;
-    private static final int RC_SIGN_IN = 1;
+    private static final int RC_SIGN_IN = 9001;
     private GoogleApiClient mGoogleApiClient;
     private FirebaseAuth mAuth;
     private String TAG = "Google Sign In";
@@ -91,6 +91,7 @@ public class GoogleSignIn extends AppCompatActivity {
                 firebaseAuthWithGoogle(account);
             } else {
                 // Google Sign In failed, update UI appropriately
+                Toast.makeText(this, "Google Sign in Failed", Toast.LENGTH_LONG).show();
                 // ...
             }
         }
@@ -112,7 +113,8 @@ public class GoogleSignIn extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
-                            Toast.makeText(getBaseContext(), "Authentication failed.",
+                            Toast.makeText(getBaseContext(), "Authentication failed due to: " +
+                                            task.getException().getMessage(),
                                     Toast.LENGTH_SHORT).show();
 //                            updateUI(null);
                         }
@@ -132,5 +134,11 @@ public class GoogleSignIn extends AppCompatActivity {
         mAuth.addAuthStateListener(mAuthListener);
 //        FirebaseUser currentUser = mAuth.getCurrentUser();
 //        updateUI(currentUser);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAuth.removeAuthStateListener(mAuthListener);
     }
 }
