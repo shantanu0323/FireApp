@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         stringArrayList.add("UploadImage");
         stringArrayList.add("CaptureImage");
         stringArrayList.add("AudioRecorder");
+        stringArrayList.add("GoogleSignIn");
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout
                 .simple_list_item_1, stringArrayList);
         listView.setAdapter(adapter);
